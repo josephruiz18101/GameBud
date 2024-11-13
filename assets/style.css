@@ -74,3 +74,21 @@ button {
         width: 100%; /* Full width for inputs on small screens */
     }
 }
+#games-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.game {
+    width: 200px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.game img {
+    max-width: 100%;
+    height: auto;
+}

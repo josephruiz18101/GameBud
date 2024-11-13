@@ -110,3 +110,12 @@ async function deleteProfile(id) {
         alert("Failed to delete profile.");
     }
 }
+app.post('/api/games', async (req, res) => {
+    try {
+        // Fetch games from IGDB
+        const games = await fetchGamesFromIGDB(); // Replace with your function that fetches games from IGDB
+        res.json(games); // Send games as JSON to the front end
+    } catch (error) {
+        res.status(500).json({ error: 'Failed to fetch games' });
+    }
+});
