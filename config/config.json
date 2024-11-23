@@ -1,25 +1,23 @@
 {
-    "development": {
-    "username": "josep",
+  "development": {
+    "username": "postgres",
     "password": "Lovebsdraco18101",
     "database": "gamerbud",
     "host": "localhost",
-    "dialect": "postgres",  
-    "logging": false
-    },
-    "test": {
-      "username": "process.env.DB_USERNAME",
-      "password": "process.env.DB_PASSWORD",
-      "database": "process.env.DB_NAME",
-      "host": "process.env.DB_HOST",
-      "dialect": "process.env.DB_DIALECT"
-    },
-    "production": {
-      "username": "process.env.DB_USERNAME",
-      "password": "process.env.DB_PASSWORD",
-      "database": "process.env.DB_NAME",
-      "host": "process.env.DB_HOST",
-      "dialect": "process.env.DB_DIALECT"
-    }
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "postgres",
+    "password": "yourPassword",
+    "database": "gamerbud_test",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "postgres",
+    "password": "yourPassword",
+    "database": "gamerbud_prod",
+    "host": "localhost",
+    "dialect": "postgres"
   }
-  
+}

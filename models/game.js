@@ -1,18 +1,25 @@
 module.exports = (sequelize, DataTypes) => {
-  const Game = sequelize.define('Game', {
+    const Game = sequelize.define('Game', {
       title: {
-          type: DataTypes.STRING,
-          allowNull: false
+        type: DataTypes.STRING,
+        allowNull: false,
       },
       description: {
-          type: DataTypes.TEXT,
-          allowNull: true
+        type: DataTypes.TEXT,
+      },
+      image_url: {
+        type: DataTypes.STRING,
       },
       platform: {
-          type: DataTypes.STRING,
-          allowNull: true
+        type: DataTypes.STRING,
       },
-  });
-
-  return Game;
-};
+      release_year: {
+        type: DataTypes.INTEGER,
+      },
+    }, {
+      tableName: 'games', // Use lowercase 'games' table
+    });
+    
+    return Game;
+  };
+  
